@@ -224,6 +224,7 @@ body:not(.dark-theme) #theme-button.bx-moon {
 .section__title {
   font-size: var(--h2-font-size);
   margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 
 .section__title span {
@@ -626,6 +627,7 @@ nav {
 /* Each individual property item */
 .property-item {
   flex: 1 1 300px;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -645,10 +647,14 @@ nav {
 
 /* Image styling */
 .property-item img {
-  width: 50%;
+  width: 80%;
   height: auto;
   border-radius: 8px;
 }
+ #item-link:hover {
+  text-decoration: none;
+ }
+ 
 
 /* Styling for the text inside each property */
 .property-info {
