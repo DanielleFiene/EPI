@@ -5,17 +5,18 @@
 :root {
   --header-height: 3.5rem;
 
-  --first-color: hsl(30, 70%, 60%);
-  --first-color-alt: hsl(30, 70%, 45%);
-  --first-color-light: hsl(30, 60%, 55%);
-  --first-color-lighten: hsl(30, 90%, 95%);
-  --second-color: hsl(40, 60%, 70%);
-  --title-color: hsl(30, 20%, 20%);
-  --text-color: hsl(30, 20%, 50%);
-  --text-color-light: hsl(30, 70%, 65%);
-  --border-color: hsl(30, 30%, 90%);
-  --body-color: hsl(30, 20%, 95%);
-  --container-color: hsl(30, 20%, 92%);
+  --first-color: hsl(210, 70%, 40%); /* Deep blue for trust and professionalism */
+  --first-color-alt: hsl(210, 70%, 30%); /* Darker blue for contrast */
+  --first-color-light: hsl(210, 60%, 50%); /* Softer blue for accents */
+  --first-color-lighten: hsl(210, 90%, 95%); /* Very light blue for background highlights */
+  --second-color: hsl(210, 30%, 35%); /* Warm neutral for balance */
+  --title-color: hsl(210, 20%, 15%); /* Strong, dark text for readability */
+  --text-color: hsl(210, 20%, 40%); /* Muted text color for balance */
+  --text-color-light: hsl(210, 50%, 60%); /* Softer blue for secondary text */
+  --border-color: hsl(210, 30%, 85%); /* Subtle contrast for dividers */
+  --body-color: hsl(210, 20%, 95%); /* Soft background for a clean layout */
+  --container-color: hsl(210, 20%, 90%); /* Light neutral for sections */
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -116,13 +117,14 @@ button {
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
 
-  --first-color: hsl(30, 70%, 62%);
-  --second-color: hsl(25, 57%, 54%);
-  --title-color: hsl(30, 8%, 95%);
-  --text-color: hsl(30, 8%, 70%);
-  --border-color: hsl(30, 16%, 14%);
-  --body-color: hsl(30, 12%, 8%);
-  --container-color: hsl(30, 16%, 12%);
+  --first-color: hsl(210, 70%, 55%); /* Vibrant blue for contrast */
+  --second-color: hsl(210, 30%, 35%); /* Muted deep blue for accents */
+  --title-color: hsl(210, 10%, 90%); /* Light text for readability */
+  --text-color: hsl(210, 10%, 65%); /* Softer muted text */
+  --border-color: hsl(210, 15%, 25%); /* Subtle border contrast */
+  --body-color: hsl(210, 12%, 10%); /* Deep, modern dark background */
+  --container-color: hsl(210, 15%, 14%); /* Slightly lighter than body for sections */
+
 
 }
 
@@ -608,10 +610,12 @@ nav {
 
 .swiper-button-next:hover {
   background-color: var(--second-color);
+  color: var(--first-color-lighten);
 }
 
 .swiper-button-prev:hover {
   background-color: var(--second-color);
+  color: var(--first-color-lighten);
 }
 
 /* dedicated section for the properties, list */

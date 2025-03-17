@@ -5,17 +5,17 @@
 :root {
   --header-height: 3.5rem;
 
-  --first-color: hsl(30, 70%, 60%);
-  --first-color-alt: hsl(30, 70%, 45%);
-  --first-color-light: hsl(30, 60%, 55%);
-  --first-color-lighten: hsl(30, 90%, 95%);
-  --second-color: hsl(40, 60%, 70%);
-  --title-color: hsl(30, 20%, 20%);
-  --text-color: hsl(30, 20%, 50%);
-  --text-color-light: hsl(30, 70%, 65%);
-  --border-color: hsl(30, 30%, 90%);
-  --body-color: hsl(30, 20%, 95%);
-  --container-color: hsl(30, 20%, 92%);
+  --first-color: hsl(210, 70%, 40%); /* Deep blue for trust and professionalism */
+  --first-color-alt: hsl(210, 70%, 30%); /* Darker blue for contrast */
+  --first-color-light: hsl(210, 60%, 50%); /* Softer blue for accents */
+  --first-color-lighten: hsl(210, 90%, 95%); /* Very light blue for background highlights */
+  --second-color: hsl(210, 30%, 35%); /* Warm neutral for balance */
+  --title-color: hsl(210, 20%, 15%); /* Strong, dark text for readability */
+  --text-color: hsl(210, 20%, 40%); /* Muted text color for balance */
+  --text-color-light: hsl(210, 50%, 60%); /* Softer blue for secondary text */
+  --border-color: hsl(210, 30%, 85%); /* Subtle contrast for dividers */
+  --body-color: hsl(210, 20%, 95%); /* Soft background for a clean layout */
+  --container-color: hsl(210, 20%, 90%); /* Light neutral for sections */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -270,6 +270,7 @@ button {
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.7);
+    color: var(--first-color-light);
 }
 
 button:focus {
@@ -409,7 +410,7 @@ label[for="gdpr"] a:hover {
 /*=============== BUTTON ===============*/
 .button {
     display: block;
-    background: linear-gradient(101deg, hsl(30, 70%, 53%), hsl(30, 70%, 47%));
+    background: var(--first-color);
     color: #fff;
     padding: 12px 20px;
     border-radius: 0.5rem;
@@ -424,6 +425,8 @@ label[for="gdpr"] a:hover {
   
   .button:hover {
     box-shadow: 0 4px 12px hsla(228, 66%, 25%, 2);
+    background-color: var(--first-color-alt);
+    color: var(--first-color-lighten);
   }
 
 /* Responsive Design */
